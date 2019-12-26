@@ -1,0 +1,41 @@
+<web-app>
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>servlet1</servlet-class>
+		
+	</servlet>
+	<servlet>
+		<servlet-name>s3</servlet-name>
+		<servlet-class>servlet3</servlet-class>
+		
+		<init-param>  
+			<param-name>color</param-name>  
+			<param-value>red</param-value>  
+	</init-param>
+	</servlet>
+	
+	  <servlet>
+	  		<servlet-name>s5</servlet-name>
+	  		<servlet-class>servlet5</servlet-class>
+	  </servlet>
+		
+	<context-param>
+	   <param-name>uname</param-name>
+	   <param-value>mansi</param-value>
+</context-param>
+	
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/hii</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+			<servlet-name>s3</servlet-name>
+			<url-pattern>/kk</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+				<servlet-name>s5</servlet-name>
+				<url-pattern>/pq1</url-pattern>
+	</servlet-mapping>
+</web-app>
